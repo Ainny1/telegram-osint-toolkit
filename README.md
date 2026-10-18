@@ -104,3 +104,21 @@ Only investigate public references for legitimate purposes and process exports w
 Python · OSINT · cybersecurity · CLI design · input validation · local digital forensics · automated testing · GitHub Actions · privacy by design
 
 Licensed under MIT. See [LICENSE](LICENSE).
+
+
+## Interactive dashboard (v0.2)
+
+A dark-themed local dashboard is available in [dashboard/dashboard.html](dashboard/dashboard.html). You can open the HTML file directly in a browser, or launch the localhost web server:
+
+```bash
+python dashboard/server.py
+```
+
+Open **http://127.0.0.1:8765**. The dashboard starts with **synthetic demo data**. Select **Choose File** to load a JSON summary created by the CLI:
+
+```bash
+tg-osint export /path/to/your/authorized/result.json --output reports/summary.json
+```
+
+Charts include monthly activity and message types, plus a public-reference list and downloadable JSON summary. All processing happens in your browser. No data is uploaded and the server binds to localhost only. Do not load private raw export data into the dashboard; use aggregate CLI reports instead.
+
