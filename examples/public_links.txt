@@ -1,0 +1,3 @@
+# Synthetic/public examples: add references you have permission to investigate
+@OpenAI
+https://t.me/telegram
