@@ -122,3 +122,11 @@ tg-osint export /path/to/your/authorized/result.json --output reports/summary.js
 
 Charts include monthly activity and message types, plus a public-reference list and downloadable JSON summary. All processing happens in your browser. No data is uploaded and the server binds to localhost only. Do not load private raw export data into the dashboard; use aggregate CLI reports instead.
 
+
+## Version 2.0 — Live investigation console
+
+Open the [live GitHub Pages dashboard](https://ainny1.github.io/telegram-osint-toolkit/) on desktop or mobile. Features include responsive SOC-style charts, monthly activity trends, message-type distribution, public username inventory, and a print-formatted investigation report.
+
+**PDF:** Choose **Print / Save PDF**, then use your browser's Print dialog to save as a PDF. On iOS, use the print preview/share workflow if available. Reports are assembled locally from synthetic demo data or imported aggregate summary JSON. The site never uploads your file. Do not load raw Telegram chat exports directly into this web dashboard; use the Python CLI to produce aggregate JSON first.
+
+**Scope:** This is an educational offline visualization, not a live Telegram monitoring or account-identification tool.
